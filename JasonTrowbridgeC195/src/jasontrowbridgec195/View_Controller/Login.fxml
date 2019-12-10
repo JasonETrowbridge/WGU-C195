@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="359.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: gray;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jasontrowbridgec195.View_Controller.LoginController">
+   <children>
+      <AnchorPane layoutX="4.0" layoutY="60.0" prefHeight="172.0" prefWidth="351.0">
+         <children>
+            <TextField fx:id="UsernameTextField" layoutX="141.0" layoutY="33.0" onAction="#UserNameTextFieldHandler" promptText="Username" />
+            <Label fx:id="LoginUsernameLabel" layoutX="24.0" layoutY="32.0" prefHeight="27.0" prefWidth="98.0" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="PasswordTextField" layoutX="141.0" layoutY="75.0" onAction="#PasswordTextFieldHandler" promptText="Password" style="-fx-border-color: silver;" />
+            <Label fx:id="LoginPasswordLabel" layoutX="24.0" layoutY="74.0" prefHeight="27.0" prefWidth="98.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="LoginButton" layoutX="189.0" layoutY="125.0" mnemonicParsing="false" onAction="#LoginButtonHandler" text="Login" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="LoginLabel" alignment="TOP_CENTER" layoutX="146.0" layoutY="14.0" text="Login" textAlignment="CENTER" textFill="#160101">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>
